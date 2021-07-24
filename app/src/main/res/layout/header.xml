@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:background="@drawable/back"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <ImageView
+        android:layout_width="111dp"
+        android:layout_height="88dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_mono_bold"
+        android:text="@string/covid_19_vaccination"
+        android:textColor="@color/statusColor"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:fontFamily="@font/roboto_mono_bold"
+        android:text="@string/register_today"
+        android:textColor="@color/orange"
+        android:textSize="14sp" />
+
+
+</LinearLayout>

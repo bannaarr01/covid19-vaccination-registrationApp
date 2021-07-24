@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="3dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="2dp"
+    app:cardUseCompatPadding="true">
+
+    <ImageView
+        android:id="@+id/arrowRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:padding="16dp"
+        app:srcCompat="@drawable/ic_arrowdown" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutFAQ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvQuestionFAQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:fontFamily="@font/roboto_mono_bold"
+            android:padding="16dp"
+            android:text="@string/tvQuestionFAQText"
+            android:textSize="16sp" />
+
+
+        <RelativeLayout
+            android:id="@+id/expandable_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/imgFaq"
+                android:layout_width="73dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:srcCompat="@drawable/logo" />
+
+
+            <TextView
+                android:id="@+id/tvAnswerFAQ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgFaq"
+                android:padding="16dp"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:lineSpacingExtra="5sp"
+                android:text="@string/tvAnswerFAQText"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
