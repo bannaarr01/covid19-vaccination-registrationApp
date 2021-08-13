@@ -30,4 +30,4 @@ https://youtu.be/krXhIJNQMUs
 
 
 ## License
-You are free to use this app for your project.
+You are free to use this app.
